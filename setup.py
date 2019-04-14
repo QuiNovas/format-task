@@ -8,7 +8,7 @@ lambda_name = 'format-task'
 # https://packaging.python.org/en/latest/single_source_version.html
 lambda_version = '0.0.1'
 
-lambda_description = 'my lambda'
+lambda_description = 'Step-functions task that formats a map using a supplied arguments map, and returns the results'
 
 long_description = lambda_description
 
