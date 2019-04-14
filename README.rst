@@ -4,7 +4,7 @@ format-task
 
 .. _APL2: http://www.apache.org/licenses/LICENSE-2.0.txt
 
-descripition
+Step-functions task that formats a map using a supplied arguments map, and returns the results
 
 Handler Method
 --------------
