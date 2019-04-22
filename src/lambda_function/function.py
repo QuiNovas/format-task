@@ -7,8 +7,8 @@ logger.setLevel(logging.INFO)
 
 def handler(event, context):
     logger.info('Processing event :{}'.format(json.dumps(event)))
-    results = event['results']
-    arguments = event['arguments']
+    results = event['Results']
+    arguments = event['Arguments']
     for key in results:
         results[key] = results[key].format(**arguments)
     return results
