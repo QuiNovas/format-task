@@ -17,10 +17,10 @@ Request Syntax
 .. code::
 
     {
-        "results":{
+        "Results":{
             "myname": "my string {foobar} to format",
         }
-        "arguments":{
+        "Arguments":{
             "foobar": 1,
         }
     }
