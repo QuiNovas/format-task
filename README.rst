@@ -27,7 +27,8 @@ Request Syntax
             "foobar": 1,
         }
         "Pattern": "string",
-        "Replacement": "gnirts"
+        "Replacement": "gnirts",
+        "SubstituteFirst": true
     }
 
     {
@@ -38,7 +39,8 @@ Request Syntax
             "foobar": 1,
         }
         "Pattern": "string",
-        "Replacement": "gnirts"
+        "Replacement": "gnirts",
+        "SubstituteFirst": true
     }
 
     {
@@ -49,7 +51,8 @@ Request Syntax
             "foobar": 1,
         }
         "Pattern": "string",
-        "Replacement": "gnirts"
+        "Replacement": "gnirts",
+        "SubstituteFirst": true
     }
 
 **Results**: Required
@@ -67,6 +70,9 @@ Request Syntax
     *Results*. if absent a default of ``a^`` will be used.
 **Replacement**: Optional
     The replacement string to use. If absent, then empty string will be used.
+**SubstituteFirst**: Optional
+    ``true`` if substitution should be applied before formatting, ``false``
+    otherwise. If absent defaults to ``true``.
 
 Response syntax
 ---------------
