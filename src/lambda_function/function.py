@@ -9,10 +9,10 @@ logger.setLevel(logging.INFO)
 def handler(event, context):
     logger.info('Processing event :{}'.format(json.dumps(event)))
     results = event['Results']
-    arguments = event('Arguments', {})
-    pattern = event('Pattern', 'a^')
-    repl = event('Replacement', '')
-    first = event('SubstituteFirst', True)
+    arguments = event.get('Arguments', {})
+    pattern = event.get('Pattern', 'a^')
+    repl = event.get('Replacement', '')
+    first = event.get('SubstituteFirst', True)
     if isinstance(results, dict):
         for key in results:
             results[key] = re.sub(pattern, repl, results[key]).format(**arguments) \
